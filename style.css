@@ -1,0 +1,67 @@
+
+
+body{
+    box-sizing: border-box;
+    background-color:hsl(223, 19%, 93%);
+    
+    
+}
+
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    
+    padding: 8px;
+
+}
+.replies{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid hsl(211, 10%, 45%);
+    width: 550px;
+    margin-left: 15%;
+}
+
+
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    width: 650px;
+    padding: 15px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid hsl(211, 10%, 45%);
+    
+}
+
+
+ .enter-new {
+    width: 650px;
+    padding: 15px;
+    margin: 1em;
+    background-color: white;
+    border: 1px solid hsl(211, 10%, 45%);
+}
+
+.new-comment{
+   width: 400px;
+   height: 100px;
+}
+
+.comment-info{
+    padding:2px;
+    margin:5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+   

@@ -1,30 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <!-- Fonts from google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive comments section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+<!-- credit to https://css-tricks.com/styling-comment-threads/ for major html layout ideas -->
 <body>
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+  <div class="content">
+    <div class="comments">
+
+      <div class="rating">
+        <button class="upvote-btn">
+
+          <span class="upvote">Vote up</span>
+        </button>
+        <button class="downvote-btn">
+
+          <span class="downvote">Vote down</span>
+        </button>
+      </div>
+      <div class="comment">
+        <div class="comment-heading">
+
+          <div class="comment-info">
+            <p class="user">someguy14</p>
+            <p class="post-date">
+              4 days ago
+            </p>
+            <button class="reply-btn">Reply</button>
+
+          </div>
+        </div>
+
+        <div class="comment-text">
+          <p>
+            This is really great! I fully agree with what you wrote, and this is sure to help me out in the future.
+            Thank
+            you for posting this.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="replies">
+      <div class="rating">
+        <button class="upvote-btn">
+
+          <span class="upvote">Vote up</span>
+        </button>
+        <button class="downvote-btn">
+
+          <span class="downvote">Vote down</span>
+        </button>
+      </div>
+      <div class="comment">
+
+        <div class="comment-heading">
+
+          <div class="comment-info">
+            <p class="user">randomperson81</p>
+            <p class="post-date">
+              3 days ago
+            </p>
+            <button class="reply-btn">Reply</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+
+        <div class="comment-text">
+          <p>
+            Took the words right out of my mouth!
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="enter-new">
+      <input type="text" class="new-comment" placeholder="Add a Comment...">
+      <button type="submit">Send</button>
+    </div>
+  </div>
+
+
 </body>
+
 </html>
